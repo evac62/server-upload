@@ -36,7 +36,7 @@ var server = http.createServer(function(request, response) {
     if (request.url == "/") {
         filePath = "https://serverupload.herokuapp.com/public/index.html";
     } else {
-        filePath = "public" + request.url;
+        filePath = "https://serverupload.herokuapp.com/public" + request.url;
     }
 
     var absPath = "./" + filePath;
